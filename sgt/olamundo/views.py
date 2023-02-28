@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Olá mundo, Que tistreza!")
+    
+def saudacao(request, nome):
+    return render(request, 'index.html')
